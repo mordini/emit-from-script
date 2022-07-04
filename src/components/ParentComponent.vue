@@ -17,9 +17,9 @@ export default {
       // works fine here
       console.log(`received from child: ${event.target.value}`);
     },
-    gotWord() {
-      // no event
-      console.log(`received from child: ${event.target.value}`);
+    gotWord(word) {
+      console.log(`received from child word: ${word}`);
+      // console.log(`received from child: ${event.target.value}`);
     }
   }
 };

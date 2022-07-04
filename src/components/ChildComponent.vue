@@ -27,7 +27,8 @@ export default {
         // I'd like to send a signal to the parent to run
         // a function from within
         // but I suspect because there's no real event, this breaks
-        this.$emit('gotWord', word);
+        // this.$emit('gotWord', word);
+        this.$parent.gotWord(word);
       }
     }
   }
